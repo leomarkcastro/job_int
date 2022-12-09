@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  /* background: transparent; */
+
+  background-color: rgba(155, 155, 155, 0.15);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  /* border: rgba(155, 155, 155, 0.5); */
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+}
