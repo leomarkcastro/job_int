@@ -1,8 +1,7 @@
-import { AppProps } from "next/app";
-import Head from "next/head";
-
 import "animate.css";
 import "@/styles/globals.css";
+
+import { AppProps } from "next/app";
 import globalMeta from "@/components/seo/SEOglobal";
 import SEOHead from "@/components/seo/SEOhead";
 
@@ -11,7 +10,7 @@ const structuredLd = JSON.stringify({
   description: "Evelan Gmbh NextJS + Typescript REST API website.",
 });
 
-const App = ({ Component, pageProps: { ...pageProps } }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <div>
       <SEOHead
