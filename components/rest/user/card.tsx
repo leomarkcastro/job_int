@@ -15,6 +15,7 @@ export function UserCard({ user }: UserCardProps) {
           className="object-cover"
           layout="fill"
           sizes="320 640 750"
+          priority
         />
       </div>
       <div className="flex flex-col items-center justify-center flex-1 p-2">
