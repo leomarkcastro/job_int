@@ -27,6 +27,7 @@ const structuredLd = JSON.stringify({
 });
 
 const Page: FC<PageProps> = (props) => {
+  const [firstLoad, setFirstLoad] = useState(true);
   const [userList, setUserList] = useState(props.userdata.data);
   const [loadMore, setLoadMore] = useState(
     props.userdata.page < props.userdata.total_pages
@@ -37,6 +38,7 @@ const Page: FC<PageProps> = (props) => {
       page: Math.floor(userList.length / 6) + 1,
     });
 
+    setFirstLoad(false);
     setUserList([...userList, ...additionalUsers.data]);
     setLoadMore(additionalUsers.page < additionalUsers.total_pages);
   };
@@ -53,7 +55,9 @@ const Page: FC<PageProps> = (props) => {
       <div className="w-full max-w-screen-lg mx-auto my-20">
         <h1 className="text-4xl font-bold text-center">Users</h1>
         <br></br>
-        <UserList userList={userList}></UserList>
+        <UserList
+          userList={firstLoad ? props.userdata.data : userList}
+        ></UserList>
         <br></br>
         <div className="w-full text-center">
           <button

@@ -14,8 +14,6 @@ export function UserCard({ user }: UserCardProps) {
           alt={user.first_name}
           className="object-cover"
           layout="fill"
-          width={500}
-          height={500}
           sizes="320 640 750"
         />
       </div>
