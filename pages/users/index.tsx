@@ -46,11 +46,9 @@ const Page: FC<PageProps> = (props) => {
   return (
     <div>
       <SEOHead
-        canonicalUrl={globalMeta.siteUrl}
         structuredData={structuredLd}
-        title="NextJs Head | SEO"
-        description="NextJs Head, a reliable guide for how to use it and what it's really for."
-        ogType="website"
+        title="Users | NextJS TS"
+        description="Cards with users data fetched from regres API."
       />
       <div className="w-full max-w-screen-lg mx-auto my-20">
         <h1 className="text-4xl font-bold text-center">Users</h1>
