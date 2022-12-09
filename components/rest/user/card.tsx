@@ -1,5 +1,5 @@
 import { User } from "@/types/users/user.types";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 interface UserCardProps {
   user: User;
@@ -14,6 +14,7 @@ export function UserCard({ user }: UserCardProps) {
           alt={user.first_name}
           className="object-cover"
           layout="fill"
+          sizes="320 640 750"
         />
       </div>
       <div className="flex flex-col items-center justify-center flex-1 p-2">

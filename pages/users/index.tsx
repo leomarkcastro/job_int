@@ -51,7 +51,7 @@ const Page: FC<PageProps> = (props) => {
         ogType="website"
       />
       <div className="w-full max-w-screen-lg mx-auto my-20">
-        <h1 className="text-4xl font-bold">Users</h1>
+        <h1 className="text-4xl font-bold text-center">Users</h1>
         <br></br>
         <UserList userList={userList}></UserList>
         <br></br>

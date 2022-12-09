@@ -7,7 +7,7 @@ interface UserListProps {
 
 export function UserList({ userList }: UserListProps) {
   return (
-    <div className="grid w-full grid-cols-2 gap-4 lg:grid-cols-3">
+    <div className="grid w-full grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3">
       {userList.map((user) => (
         <UserCard key={user.id} user={user}></UserCard>
       ))}
