@@ -7,7 +7,7 @@ interface UserCardProps {
 
 export function UserCard({ user }: UserCardProps) {
   return (
-    <div className="flex h-32 overflow-hidden border rounded-lg shadow animate__animated animate__fadeIn">
+    <div className="flex h-32 overflow-hidden border rounded-lg shadow animate__animated animate__fadeIn animate__faster">
       <div className="relative w-1/3 h-full">
         <Image
           src={user.avatar}
